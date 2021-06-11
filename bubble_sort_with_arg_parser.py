@@ -33,9 +33,9 @@ while True:
     for i in range(len(mylist)-1):
         vprint(mylist[i])
         if mylist[i]>mylist[i+1]:
-            tmp = mylist[i]
-            mylist[i] = mylist[i+1]
-            mylist[i+1] = tmp
+            #tmp = mylist[i]
+            mylist[i],mylist[i+1] = mylist[i+1], mylist[i]
+            #mylist[i+1] = tmp
             swap = True
     if not swap:
         break
